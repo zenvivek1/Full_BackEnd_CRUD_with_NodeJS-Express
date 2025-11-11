@@ -1,6 +1,6 @@
 const mongooose = require('mongoose')
 
-mongooose.connect('mongodb://localhost/database202').then(
+mongooose.connect(process.env.MONGO_URI).then(
     console.log("Database Conneted")
 )
 
